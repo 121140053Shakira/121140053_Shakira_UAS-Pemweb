@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS universitas;
+USE universitas;
+
+CREATE TABLE IF NOT EXISTS universitas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    option VARCHAR(50) NOT NULL,
+    radio VARCHAR(10) NOT NULL,
+    browser VARCHAR(50) NOT NULL,
+    ip_address VARCHAR(15) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

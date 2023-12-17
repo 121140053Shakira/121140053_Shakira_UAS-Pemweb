@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Navigation */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: #4CAF50;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  /* Form Section */
+  .form-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+  }
+  .form-container {
+    flex: 1;
+    width: 512px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+  }
+  
+  form {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #777575;
+  }
+  
+  input, button {
+    padding: 10px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(20, 40, 74);
+  }
+  
+  /* Table Section */
+  .table-section {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Footer Section */
+  footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  }
+  
+  /* Responsive Layout */
+  @media screen and (max-width: 768px) {
+  .container {
+  width: 90%;
+  }
+  
+  form {
+  grid-template-columns: 1fr;
+  }
+  
+  nav ul {
+  flex-direction: column;
+  align-items: flex-end;
+  }
+  
+  nav ul li {
+  margin: 10px 0;
+  }
+  }
